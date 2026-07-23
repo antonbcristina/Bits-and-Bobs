@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-23T14:42:33.080679+00:00",
+  "_captured_run_id": "r_174ad5cde5274cc490df5d86d3804a4f",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Read 19 rows from sashelp.class.",
+    "NOTE: Wrote gitstuff.class_birthdate (19 rows, 6 columns).",
+    "NOTE: Read 19 rows from gitstuff.class_birthdate.",
+    "NOTE: Wrote gitstuff.class_birthdate (38 rows, 6 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

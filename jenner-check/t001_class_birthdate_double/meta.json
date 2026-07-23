@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_class_birthdate_double",
+  "source_file": "a program.sas",
+  "source_blob_sha": "e521be6575d21abe6ea6cd9ac52d6cd6eb1d34ab",
+  "source_commit": "7e66ab886cd38ae53c114f381f6b8ef99a9723a7",
+  "notes": "Upstream reads the permanent dataset gitstuff.class_birthdate via a hardcoded SAS Viya home libname, then doubles every row with two OUTPUT statements. The doubling DATA step (data/set/output;output;/run;) is verbatim from a program.sas. class_birthdate is sashelp.class (the 19 class records: Name/Sex/Age/Height/Weight) plus a Birthdate column, so the bundle seeds it from sashelp.class with a deterministic Birthdate derived from Age, keeping the script self-contained (Viya home path rewritten to a relative directory). A trailing PROC SQL count surfaces the doubling in the listing. Captured run: 19 rows seeded, doubling produces 38 rows (6 columns); listing shows 'Rows after doubling = 38'. Reproducible across POSTs; no vendor banner in log/listing."
+}
